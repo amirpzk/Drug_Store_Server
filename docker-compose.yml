@@ -1,0 +1,14 @@
+version: "3"
+services:
+  latifi:
+    restart: always
+    image: latifi
+    network_mode: bridge
+    container_name: latifi-server
+    ports:
+      - 6073:8080
+    environment:
+      MySQL-URL: 'jdbc:mysql://209.182.239.227:3306/latifi'
+      MySQL-Username: 'administrator'
+      MySQL-Password: 'a2Qp#}>Z,Qu?FJ'
+      Hibernate-DDL: 'update'
